@@ -24,6 +24,9 @@ require("lazy").setup({
             vim.cmd.colorscheme("kanagawa-wave")
         end,
     },
+    {
+        "nvim-treesitter/nvim-treesitter",
+    }
 })
 
  -- executes this command upon
