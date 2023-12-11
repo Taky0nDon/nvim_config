@@ -15,7 +15,6 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-
 -- access the setup function in lazy/lazy.nvim/init.lua
 require("lazy").setup({
     { -- Installs plugin (asynchronously)
@@ -26,6 +25,24 @@ require("lazy").setup({
     },
     {
         "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-treesitter.configs").setup({
+                ensure_installed = {
+                    "c",
+                    "lua",
+                    "vim",
+                    "vimdoc",
+                    "query",
+                    "python",
+            },
+
+                auto_install = true,
+
+                highlight = {
+                    enable = true,
+                },
+            })
+        end,
     }
 })
 
