@@ -23,6 +23,7 @@ require("lazy").setup({
             vim.cmd.colorscheme("kanagawa-wave")
         end,
     },
+<<<<<<< HEAD:lua/plugins/plugins.lua
     {
         "nvim-treesitter/nvim-treesitter",
         config = function()
@@ -44,6 +45,8 @@ require("lazy").setup({
             })
         end,
     }
+=======
+>>>>>>> parent of 93572b5 (added treesitter table to setup in plugins.lua):lua/plugins.lua
 })
 
  -- executes this command upon
