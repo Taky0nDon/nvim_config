@@ -1,7 +1,5 @@
 
 -- Set up lazy.nvim
---
---
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -23,7 +21,6 @@ require("lazy").setup({
             vim.cmd.colorscheme("kanagawa-wave")
         end,
     },
--- <<<<<<< HEAD:lua/plugins/plugins.lua
     {
         "nvim-treesitter/nvim-treesitter",
         config = function()
@@ -44,9 +41,12 @@ require("lazy").setup({
                 },
             })
         end,
+    },
+    {
+        "neovim/nvim-lspconfig",
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim"
     }
--- =======
--- >>>>>>> parent of 93572b5 (added treesitter table to setup in plugins.lua):lua/plugins.lua
 })
 
  -- executes this command upon
