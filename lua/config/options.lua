@@ -14,9 +14,11 @@ vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 
+-- LSP
+vim.diagnostic.config = { update_in_insert = true }
 -- folding
 vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "1"
 
 -- python
-vim.g.python3_host_prog = "C:/Users/Mourn/AppData/Local/Programs/Python/Python311/python.exe" 
+vim.g.python3_host_prog = "C:/Users/Mourn/AppData/Local/Programs/Python/Python311/python.exe"

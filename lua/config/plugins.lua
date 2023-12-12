@@ -21,6 +21,13 @@ require("lazy").setup({
             vim.cmd.colorscheme("kanagawa-wave")
         end,
     },
+
+    {
+        "neovim/nvim-lspconfig",
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim"
+    },
+
     {
         "nvim-treesitter/nvim-treesitter",
         config = function()
@@ -42,11 +49,6 @@ require("lazy").setup({
             })
         end,
     },
-    {
-        "neovim/nvim-lspconfig",
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim"
-    }
 })
 
  -- executes this command upon
