@@ -15,7 +15,6 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 
 -- LSP
-vim.diagnostic.config = { update_in_insert = true }
 -- folding
 vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "1"
