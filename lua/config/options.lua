@@ -1,4 +1,6 @@
-vim.opt.formatoptions = "jcrql" 
+vim.cmd.colorscheme("kanagawa-wave")
+
+vim.opt.formatoptions = "jcrql"
 vim.opt.number = true  -- Line numbers
 vim.opt.relativenumber = true
 vim.opt.splitbelow = true  -- New horizontal splits spawn below
