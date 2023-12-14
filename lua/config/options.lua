@@ -13,8 +13,13 @@ vim.opt.virtualedit = "block"
 vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.termguicolors = true
+vim.opt.swapfile = false
 
 -- LSP
+vim.lsp.set_log_level(0)
+
+-- Diagnostic
+vim.diagnostic.config({update_in_insert = true})
 -- folding
 vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "1"
