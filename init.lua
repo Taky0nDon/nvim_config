@@ -1,11 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require("plugins.plugins")
 =======
 require("plugins/plugins")
 >>>>>>> 438b445 (initial commit. stable config)
 =======
 -- require("plugins/plugins")
+=======
+>>>>>>> 44903de (deleted line requiring plugins.lua)
 
 -- Set up lazy.nvim
 
