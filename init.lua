@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require("plugins.plugins")
 =======
 require("plugins/plugins")
@@ -14,6 +15,8 @@ require("plugins/plugins")
 =======
 -- require("plugins/plugins")
 >>>>>>> 1cac6a4 (Added contents of plugins.lua to init.lua instead of requiring it. startup ~ 0.3 sec.)
+=======
+>>>>>>> 44903de (deleted line requiring plugins.lua)
 
 -- Set up lazy.nvim
 
