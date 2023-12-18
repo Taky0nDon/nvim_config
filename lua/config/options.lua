@@ -20,19 +20,25 @@ vim.opt.swapfile = false
 -- LSP
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> merge-with-remote
 vim.lsp.set_log_level(0)
-=======
 vim.lsp.set_log_level(2)  -- Info
+<<<<<<< HEAD
 >>>>>>> 438b445 (initial commit. stable config)
 =======
 vim.lsp.set_log_level(2)  -- Info
 >>>>>>> 438b445 (initial commit. stable config)
+=======
+>>>>>>> merge-with-remote
 
 -- Diagnostic
 vim.diagnostic.config({update_in_insert = true})
--- folding
+
+-- Folding
 vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "1"
 
--- python
+-- Python
 vim.g.python3_host_prog = "C:/Users/Mourn/AppData/Local/Programs/Python/Python311/python.exe"
