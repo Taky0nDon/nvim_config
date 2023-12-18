@@ -18,7 +18,11 @@ vim.opt.termguicolors = true
 vim.opt.swapfile = false
 
 -- LSP
+<<<<<<< HEAD
 vim.lsp.set_log_level(0)
+=======
+vim.lsp.set_log_level(2)  -- Info
+>>>>>>> 438b445 (initial commit. stable config)
 
 -- Diagnostic
 vim.diagnostic.config({update_in_insert = true})
