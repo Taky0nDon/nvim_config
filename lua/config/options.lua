@@ -19,7 +19,11 @@ vim.opt.swapfile = false
 
 -- LSP
 <<<<<<< HEAD
+<<<<<<< HEAD
 vim.lsp.set_log_level(0)
+=======
+vim.lsp.set_log_level(2)  -- Info
+>>>>>>> 438b445 (initial commit. stable config)
 =======
 vim.lsp.set_log_level(2)  -- Info
 >>>>>>> 438b445 (initial commit. stable config)

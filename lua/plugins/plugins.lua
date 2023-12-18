@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-require("plugins.plugins")
-=======
-require("plugins/plugins")
->>>>>>> 438b445 (initial commit. stable config)
-=======
--- require("plugins/plugins")
-=======
->>>>>>> 44903de (deleted line requiring plugins.lua)
 
 -- Set up lazy.nvim
 
@@ -48,11 +36,5 @@ require("lazy").setup({
 },
 })
 
->>>>>>> 1cac6a4 (Added contents of plugins.lua to init.lua instead of requiring it. startup ~ 0.3 sec.)
-=======
-require("plugins/plugins")
->>>>>>> 438b445 (initial commit. stable config)
-require("config.options")
-require("config.autocmds")
-require("config.lsp_config")
-
+ -- executes this command upon
+-- starting neovim
