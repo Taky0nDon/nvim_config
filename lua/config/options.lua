@@ -1,3 +1,7 @@
+-- Keymapping
+vim.g.mapleader = " "
+
+-- Colors
 vim.cmd.colorscheme("kanagawa-wave")
 
 vim.opt.formatoptions = "jcrql"
