@@ -26,7 +26,5 @@ return {
         "williamboman/mason-lspconfig.nvim",
         "ms-jpq/coq_nvim", branch="coq",
     },
-   {"rebelot/kanagawa.nvim"},
-
 }
 

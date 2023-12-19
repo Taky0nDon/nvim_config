@@ -1,6 +1,7 @@
 
 -- Colors
-vim.cmd.colorscheme("kanagawa-wave")
+vim.cmd.colorscheme("modus_vivendi")
+-- vim.cmd.colorscheme("kanagawa-wave")
 
 vim.opt.formatoptions = "jcrql"
 vim.opt.number = true  -- Line numbers
