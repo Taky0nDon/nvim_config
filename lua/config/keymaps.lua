@@ -1,0 +1,2 @@
+-- Keymapping
+vim.g.mapleader = " "
