@@ -1,5 +1,4 @@
--- Set up lazy.nvim
-
+require("config.keymaps")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -12,17 +11,13 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-
+-- Load keymappings
 -------------------------- LOAD PLUGINS ----------------------------------------
 require("lazy").setup({
-    {"rebelot/kanagawa.nvim",
+    {
     "nvim-treesitter/nvim-treesitter",
     config = function()
         require("nvim-treesitter.configs").setup({
-            auto_install = true,
-            highlight = {
-                enable = true,
-            },
             incremental_selection = {
                 enable = true,
                 keymaps = {
@@ -32,10 +27,14 @@ require("lazy").setup({
                     node_decremental = "grm",
                 },
             },
+            auto_install = true,
+            highlight = {
+                enable = true,
+            },
         })
     end,
-    {},
 },
+{"rebelot/kanagawa.nvim"},
 {
     "neovim/nvim-lspconfig",
     "nvim-lua/plenary.nvim",
