@@ -1,5 +1,5 @@
 return {
-    require("telescope"),
+    require("plugins.telescope"),
     {
     "nvim-treesitter/nvim-treesitter",
     config = function()
