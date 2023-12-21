@@ -1,4 +1,5 @@
 return {
+    require("telescope"),
     {
     "nvim-treesitter/nvim-treesitter",
     config = function()
@@ -19,9 +20,9 @@ return {
         })
     end,
     },
+
     {
         "neovim/nvim-lspconfig",
-        "nvim-lua/plenary.nvim",
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "ms-jpq/coq_nvim", branch="coq",
