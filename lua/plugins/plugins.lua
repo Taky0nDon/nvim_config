@@ -1,5 +1,4 @@
 return {
-    require("plugins.telescope"),
     {
     "nvim-treesitter/nvim-treesitter",
     config = function()
@@ -19,6 +18,13 @@ return {
             },
         })
     end,
+    },
+
+    {
+        'nvim-telescope/telescope.nvim', tag = '0.1.5',
+         dependencies = { 'nvim-lua/plenary.nvim' },
+	 setup = function()
+	 end
     },
 
     {
