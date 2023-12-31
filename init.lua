@@ -4,9 +4,3 @@ local plugins = require("harrowed.plugins")
 require("lazy").setup({
 	plugins
 })
--- {
---     "ms-jpq/coq_nvim", branch="coq",
--- },
-
--- require("config.autocmds")
--- require("config.lsp_config")

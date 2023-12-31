@@ -21,6 +21,7 @@ local lsp_zero = {
     lsp_support,
     completion,
     snippets,
+    "VonHeikemen/lsp-zero.nvim",
 }
 
 return {
@@ -32,4 +33,6 @@ return {
     {"mbbill/undotree"},
     {"tpope/vim-fugitive"},
     {lsp_zero},
+    {"folke/which-key.nvim"},
+    {"ms-jpq/coq_nvim", branch="coq"},
 }
