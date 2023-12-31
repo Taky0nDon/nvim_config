@@ -8,6 +8,5 @@ require("lazy").setup({
 --     "ms-jpq/coq_nvim", branch="coq",
 -- },
 
-require("config.options")
 -- require("config.autocmds")
 -- require("config.lsp_config")
