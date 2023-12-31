@@ -9,4 +9,5 @@ return {
     {"williamboman/mason-lspconfig.nvim"},
     {"theprimeagen/harpoon"},
     {"mbbill/undotree"},
+    {"tpope/vim-fugitive"}
 }
