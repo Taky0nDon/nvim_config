@@ -1,5 +1,3 @@
-vim.cmd.colorscheme("kanagawa-wave")
-
 vim.opt.formatoptions = "jcrql"
 vim.opt.number = true  -- Line numbers
 vim.opt.relativenumber = true

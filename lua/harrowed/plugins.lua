@@ -8,4 +8,5 @@ return {
     {"williamboman/mason.nvim"},
     {"williamboman/mason-lspconfig.nvim"},
     {"theprimeagen/harpoon"},
+    {"mbbill/undotree"},
 }
