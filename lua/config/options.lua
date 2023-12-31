@@ -28,4 +28,6 @@ vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "1"
 
 -- Python
-vim.g.python3_host_prog = "C:/Users/Mourn/AppData/Local/Programs/Python/Python311/python.exe"
+-- vim.g.python3_host_prog = "/usr/bin/python3"
+-- vim.g.python3_host_prog = "/home/mike/.venvs/my_venv/bin/python3.11"
+
