@@ -1,3 +1,5 @@
+local vim_be_good = {"ThePrimeagen/vim-be-good"}
+
 local lsp_support = {
     {"neovim/nvim-lspconfig"},
     {"williamboman/mason.nvim"},
@@ -25,8 +27,24 @@ local lsp_zero = {
 }
 
 return {
+    {vim_be_good},
     { "rebelot/kanagawa.nvim" },
-    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
+        config = function ()
+            require'nvim-treesitter.configs'.setup {
+                ensure_installed = { "python", "perl", "bash", "c", "lua", "vim", "vimdoc", "query" },
+                -- Install parsers synchronously (only applied to `ensure_installed`)
+                sync_install = false,
+                -- Automatically install missing parsers when entering buffer
+                -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+                auto_install = true,
+                highlight = {
+                  enable = true,
+                  disable = {},
+                  additional_vim_regex_highlighting = false,
+                },
+            }
+        end},
     { "miikanissi/modus-themes.nvim" },
     { "nvim-telescope/telescope.nvim", dependencies = { 'nvim-lua/plenary.nvim' } },
     {"theprimeagen/harpoon"},
